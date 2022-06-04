@@ -30,51 +30,67 @@
           <li class="photo__card">
             <img
               src="./images/karachaevsk.jpg"
-              alt=""
+              alt="Фото Карачаевск"
               class="photo__card-image"
             />
             <div class="photo__card-discription">
               <h2 class="photo__card-title">Карачаевск</h2>
-              <button class="photo__card-like"></button>
+              <button type="button" class="photo__card-like"></button>
             </div>
           </li>
           <li class="photo__card">
-            <img src="./images/elbrus.jpg" alt="" class="photo__card-image" />
+            <img
+              src="./images/elbrus.jpg"
+              alt="Фото Гора Эльбрус"
+              class="photo__card-image"
+            />
             <div class="photo__card-discription">
               <h2 class="photo__card-title">Гора Эльбрус</h2>
-              <button class="photo__card-like"></button>
+              <button type="button" class="photo__card-like"></button>
             </div>
           </li>
           <li class="photo__card">
-            <img src="./images/dombai.jpg" alt="" class="photo__card-image" />
+            <img
+              src="./images/dombai.jpg"
+              alt="Фото Домбай"
+              class="photo__card-image"
+            />
             <div class="photo__card-discription">
               <h2 class="photo__card-title">Домбай</h2>
-              <button class="photo__card-like"></button>
+              <button type="button" class="photo__card-like"></button>
             </div>
           </li>
           <li class="photo__card">
-            <img src="./images/elbrus.jpg" alt="" class="photo__card-image" />
+            <img
+              src="./images/elbrus.jpg"
+              alt="Фото Гора Эльбрус"
+              class="photo__card-image"
+            />
             <div class="photo__card-discription">
               <h2 class="photo__card-title">Гора Эльбрус</h2>
-              <button class="photo__card-like"></button>
+              <button type="button" class="photo__card-like"></button>
             </div>
           </li>
           <li class="photo__card">
-            <img src="./images/dombai.jpg" alt="" class="photo__card-image" />
+            <img
+              src="./images/dombai.jpg"
+              alt="фото Домбай"
+              class="photo__card-image"
+            />
             <div class="photo__card-discription">
-              <h2 class="photo__card-title">Гора Эльбрус</h2>
-              <button class="photo__card-like"></button>
+              <h2 class="photo__card-title">Домбай</h2>
+              <button type="button" class="photo__card-like"></button>
             </div>
           </li>
           <li class="photo__card">
             <img
               src="./images/karachaevsk.jpg"
-              alt=""
+              alt="Фото Карачаево-Черкесия"
               class="photo__card-image"
             />
             <div class="photo__card-discription">
               <h2 class="photo__card-title">Карачаево-Черкесия</h2>
-              <button class="photo__card-like"></button>
+              <button type="button" class="photo__card-like"></button>
             </div>
           </li>
         </ul>
@@ -84,37 +100,39 @@
       <p class="footer__copyright">&copy; 2022. Maesto</p>
     </footer>
 
-    <section class="popup">
+    <div class="popup">
       <div class="popup__container">
-        <button class="popup__button-close" aria-label="Закрыть"></button>
-        <div class="popup__content">
-          <h3 class="popup__title">Редактировать профиль</h3>
-          <form class="popup__form">
-            <input
-              type="text"
-              name="name"
-              value="Жак-Ив Кусто"
-              placeholder="Имя"
-              class="popup__input popup__input_type_name"
-            />
-            <input
-              type="text"
-              name="title"
-              value="Исследователь океана"
-              placeholder="Деятельность"
-              class="popup__input popup__input_type_title"
-            />
-            <button
-              class="popup__save-button"
-              type="submit"
-              aria-label="Сохранить"
-            >
-              Сохранить
-            </button>
-          </form>
-        </div>
+        <button
+          type="button"
+          class="popup__button-close"
+          aria-label="Закрыть"
+        ></button>
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form name="profile_form" class="popup__form">
+          <input
+            type="text"
+            name="name"
+            value="Жак-Ив Кусто"
+            placeholder="Имя"
+            class="popup__input popup__input_type_name"
+          />
+          <input
+            type="text"
+            name="title"
+            value="Исследователь океана"
+            placeholder="Деятельность"
+            class="popup__input popup__input_type_title"
+          />
+          <button
+            class="popup__save-button"
+            type="submit"
+            aria-label="Сохранить"
+          >
+            Сохранить
+          </button>
+        </form>
       </div>
-    </section>
+    </div>
 
     <script src="./scripts/index.js"></script>
   </body>

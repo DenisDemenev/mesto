@@ -9,13 +9,13 @@ const nameInput = popup.querySelector(".popup__input_type_name");
 const titleInput = popup.querySelector(".popup__input_type_title");
 
 function openPopup() {
-  popup.classList.add("popup__open");
+  popup.classList.add("popup_open");
   nameInput.value = nameProfile.textContent;
   titleInput.value = titleProfile.textContent;
 }
 
 function closePopup() {
-  popup.classList.remove("popup__open");
+  popup.classList.remove("popup_open");
 }
 
 function formSubmit(evt) {
