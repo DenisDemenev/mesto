@@ -116,7 +116,6 @@ function createCard(el) {
     bigPhotoCapture.textContent = el.name;
     openPopup(popupBigPhoto);
   });
-
   return card;
 }
 
