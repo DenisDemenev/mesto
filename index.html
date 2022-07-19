@@ -27,16 +27,7 @@
 
     <section class="photo">
       <ul class="photo__cards">
-        <template id="photoCard">
-          <li class="photo__card">
-            <button class="photo__card-remove" type="button" title="Удалить"></button>
-            <img class="photo__card-image" src="#" alt="">
-            <div class="photo__card-discription">
-              <h2 class="photo__card-title"></h2>
-              <button class="photo__card-like" type="button"></button>
-            </div>
-          </li>
-        </template>
+
       </ul>
     </section>
   </main>
@@ -77,11 +68,23 @@
   <div class="popup popup_dark popup_photo_big">
     <div class="popup__big-photo-container">
       <button type="button" class="popup__button-close" aria-label="Закрыть"></button>
-      <img class="popup__big-photo">
+      <img src="#" alt="#" class="popup__big-photo">
       <p class="popup__big-photo-capture"></p>
     </div>
   </div>
 
+  <template id="photoCard">
+    <li class="photo__card">
+      <button class="photo__card-remove" type="button" title="Удалить"></button>
+      <img class="photo__card-image" src="#" alt="">
+      <div class="photo__card-discription">
+        <h2 class="photo__card-title"></h2>
+        <button class="photo__card-like" type="button"></button>
+      </div>
+    </li>
+  </template>
+
+  <script src="./scripts/initial-сards.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 
