@@ -24,7 +24,7 @@ const linkInput = popupAdd.querySelector(".popup__input_type_link");
 
 const photo = document.querySelector("#photoCard").content;
 const photoCard = photo.querySelector(".photo__card");
-const photoCards = document.querySelector(".photo__cards");
+const photoCardItem = document.querySelector(".photo__cards");
 
 function activeLike(evt) {
   evt.target.classList.toggle("photo__card-like_active");
@@ -67,7 +67,7 @@ function submitFormAdd(evt) {
     link: linkInput.value,
   };
   const newCard = createCard(newInfo);
-  photoCards.prepend(newCard);
+  photoCardItem.prepend(newCard);
   closePopup(popupAdd);
 }
 
@@ -92,7 +92,7 @@ function createCard(el) {
 
 initialCards.forEach(function (el) {
   const placeEl = createCard(el);
-  photoCards.append(placeEl);
+  photoCardItem.append(placeEl);
 });
 
 editButton.addEventListener("click", openPopupProfile);
