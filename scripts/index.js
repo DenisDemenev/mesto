@@ -12,13 +12,11 @@ const bigPhotoCapture = popupBigPhoto.querySelector(
 
 const popupProfile = document.querySelector(".popup_profile_edit");
 const formInputProfile = popupProfile.querySelector(".popup__form");
-const saveButtonProfile = popupProfile.querySelector(".popup__save-button");
 const nameInput = popupProfile.querySelector(".popup__input_type_name");
 const titleInput = popupProfile.querySelector(".popup__input_type_title");
 
 const popupAdd = document.querySelector(".popup_photo_card-add");
 const formInputAdd = popupAdd.querySelector(".popup__form");
-const saveButtonAdd = popupAdd.querySelector(".popup__save-button");
 const placeNameInput = popupAdd.querySelector(".popup__input_type_place");
 const linkInput = popupAdd.querySelector(".popup__input_type_link");
 
