@@ -34,6 +34,8 @@ function deleteCard(el) {
 
 function openPopup(popupItem) {
   popupItem.classList.add("popup_open");
+  document.addEventListener('keydown', closePopupByEsc);
+  popupItem.addEventListener('mousedown', closePopupByOverplay);
 }
 
 function openPopupProfile() {
@@ -49,7 +51,24 @@ function openPopupAdd() {
 
 function closePopup(popupItem) {
   popupItem.classList.remove("popup_open");
+  document.removeEventListener('keydown', closePopupByEsc);
+  popupItem.removeEventListener('mousedown', closePopupByOverplay);
 }
+
+function closePopupByOverplay(evt) {
+  if (evt.target === evt.currentTarget) {
+    const popupItem = evt.currentTarget;
+    closePopup(popupItem);
+  }
+}
+
+function closePopupByEsc(evt) {
+  if (evt.key === 'Escape') {
+    const popupItem = document.querySelector('.popup_open');
+    closePopup(popupItem);
+  }
+}
+
 
 function submitFormProfile(evt) {
   evt.preventDefault();
